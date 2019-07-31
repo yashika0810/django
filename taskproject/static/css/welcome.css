@@ -1,0 +1,24 @@
+.content{
+	width:880px;
+	height:550px;
+	float:left;
+	background-color:#d6cbd3;
+	padding-top:50px;
+	padding-left:470px;
+	}
+
+.a:hover{
+color:black;
+}
+
+
+.head{
+color:black
+}
+.image1{
+padding-left:100px;
+}
+.java{
+width:80px;
+	height:50px;
+}

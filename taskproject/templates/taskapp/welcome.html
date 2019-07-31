@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome Page</title>
+  <link href="{% static 'css/welcome.css' %}" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+
+  <div class="content">
+       <div class="image"><img class="image1" src="{%static 'images/consultadd.png' %}" alt="ops"  width="150px" height="96px "/></div>
+
+
+     <h1>Welcome, {{ user.username }}</h1>
+
+<form  method="POST" action="/logout/">
+      {% csrf_token %}
+
+      <h2 class="head">Please choose your course</h2>
+
+
+    <div class="python">PYTHON
+    <h3 class="a"><b><a href="https://consultadd.com/it-training-services/python-training-placement/" target="_blank">Python</a></b></h3>
+    </div>
+
+
+    <div class="java">AWS
+    <h3 class="a"><b><a href="https://consultadd.com/it-training-services/aws-training/" target="_blank">AWS</a></b></h3>
+    </div>
+
+
+     <div class="aws">JAVA
+    <h3 class="a"><b><a href="https://consultadd.com/it-training-services/java-training-placement/" target="_blank">JAVA</a></b></h3>
+     </div>
+
+
+</form>
+  </div>
+</body>
+</html>

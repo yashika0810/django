@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+<title>Untitled Document</title>
+
+<link href="{% static 'css/signup.css' %}" rel="stylesheet" type="text/css"/>
+    </head>
+<body>
+<form  method="post">
+     {% csrf_token %}
+    {{ insert_me.as_p }}
+<div class="mainbox">
+<div class="banner"><img class="image1" src="{%static 'images/consultadd.png' %}" alt="ops"  width="150px" height="80px "/></div>
+<div class="content">
+
+
+<div class="box"><p class="heading">&nbsp Sign up </p>
+<input class="box0" name="firstname" type="text"  placeholder= "First name" required/>
+<input class="box1" name="lastname" type="text"  placeholder= "Last Name"/>
+<input class="box2" name="username" type="text"  placeholder= "Your Email Address" required/>
+<input class="box3" name="password" type="text"  placeholder= "Choose Password" required/>
+<input class="box5" name="confirmpassword" type="text"  placeholder= "Repeat Password" required/>
+
+
+<input class="box4" type="submit" value="Register"/>
+</div>
+</div>
+
+
+
+</form>
+
+
+</body>
+</html>
